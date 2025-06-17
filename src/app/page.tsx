@@ -185,7 +185,7 @@ export default function Home() {
             <div className="bg-[#111]/80 backdrop-blur-sm border border-lime-600 rounded-xl shadow-lg p-8 max-w-xl text-center">
               <h2 className="text-2xl md:text-3xl font-semibold text-lime-400 mb-4">Welcome to My Portfolio</h2>
               <p className="text-gray-300 text-base mb-6">
-                I'm a Cloud Enthusiast and passionate about Network Security. I thrive on building resilient infrastructures and protecting digital assets.
+                I&apos;m a Cloud Enthusiast and passionate about Network Security. I thrive on building resilient infrastructures and protecting digital assets.
               </p>
               <button
                 onClick={handleNavigate}

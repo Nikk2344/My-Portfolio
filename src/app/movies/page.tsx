@@ -100,8 +100,8 @@ export default function MoviesPage() {
       <div className="flex items-center justify-center min-h-screen bg-black text-lime-400 text-center px-6">
         <div className="space-y-6">
           <div className="text-4xl animate-bounce">🎬</div>
-          <p className="text-xl font-semibold">"What we do in life echoes in eternity."</p>
-          <p className="text-sm text-gray-400">— Gladiator</p>
+          <p className="text-xl font-semibold">&quot;What we do in life echoes in eternity.&quot;</p>
+          <p className="text-sm text-gray-400">&mdash; Gladiator</p>
         </div>
       </div>
     );
@@ -129,14 +129,18 @@ export default function MoviesPage() {
                     <h3 className="text-lg sm:text-xl font-semibold text-lime-300 mb-2 leading-tight">{movie.title}</h3>
                     <p className="text-sm text-gray-400 mb-3">{movie.genre} • {movie.year}</p>
                   </div>
-                  <p className="text-gray-300 text-sm leading-relaxed overflow-hidden">{movie.description}</p>
+                  <p className="text-gray-300 text-sm leading-relaxed overflow-hidden">
+                    {movie.description.replace(/'/g, "&apos;")}
+                  </p>
                 </div>
               </div>
 
               {/* Back */}
               <div className="absolute inset-0 w-full h-full bg-[#0a0a0a] border border-lime-500 p-5 sm:p-6 rounded-xl shadow-lg flex flex-col justify-center [backface-visibility:hidden] [transform:rotateY(180deg)]">
                 <h3 className="text-xl sm:text-2xl font-bold text-lime-300 mb-4">{movie.title}</h3>
-                <p className="text-gray-300 text-sm sm:text-base mb-6 leading-relaxed flex-1 overflow-y-auto">{movie.details}</p>
+                <p className="text-gray-300 text-sm sm:text-base mb-6 leading-relaxed flex-1 overflow-y-auto">
+                  {movie.details.replace(/'/g, "&apos;")}
+                </p>
                 <div className="space-y-2 text-sm sm:text-base flex-shrink-0">
                   <p className="text-lime-400">🎬 Director: {movie.DIRECTOR}</p>
                   <p className="text-lime-400">📅 Year: {movie.year}</p>

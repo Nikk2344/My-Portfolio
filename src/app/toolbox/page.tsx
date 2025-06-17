@@ -263,7 +263,9 @@ export default function ToolboxPage() {
           {/* More Coming */}
 <div className="flex justify-center mt-10">
   <span className="text-lg md:text-xl font-semibold text-lime-200 tracking-wide">
-    <span className="text-lime-400 font-bold">And this toolbox is only growing.</span> <span className="text-gray-200">Many more industry-leading tools are on the horizon.</span>
+    <span className="text-lime-400 font-bold">And this toolbox is only growing.</span>
+    <span className="text-gray-200"> Many more industry-leading tools are on the horizon.</span>
+    <span className="block mt-2 text-lime-300 font-semibold">&hellip;and many more upcoming industry-level tools.</span>
   </span>
 </div>
         </div>

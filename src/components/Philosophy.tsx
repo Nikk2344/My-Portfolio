@@ -14,13 +14,13 @@ export default function Philosophy() {
 
   // Philosophy-related phrases
   const phrases = [
-    "I believe in the power of consistency and dedication to get your things done, learned from the book 'Atomic Habits'.",
-    "Sometimes you need to take a step back to see the bigger picture, inspired by 'The Art of War'.",
-    "Always you need to be pray for the best, but prepare for the worst, from the movie 'Prisoners'.",
-    "What we did in life echoes in eternity, a quote from the movie 'Gladiator'.",
+    "I believe in the power of consistency and dedication to get your things done, learned from the book &apos;Atomic Habits&apos;.",
+    "Sometimes you need to take a step back to see the bigger picture, inspired by &apos;The Art of War&apos;.",
+    "Always you need to be pray for the best, but prepare for the worst, from the movie &apos;Prisoners&apos;.",
+    "What we did in life echoes in eternity, a quote from the movie &apos;Gladiator&apos;.",
     "The only way to do great work is to love what you do, inspired by Steve Jobs.",
-    "That's not a bug, it's a feature, a humorous take on software development.",
-    "That's all folks, from my side but not ending here one day we all sit on chair and thinking about our life, at the end it doesn't matter.",
+    "That&apos;s not a bug, it&apos;s a feature, a humorous take on software development.",
+    "That&apos;s all folks, from my side but not ending here one day we all sit on chair and thinking about our life, at the end it doesn&apos;t matter.",
   ];
 
   const typingSpeed = 50;

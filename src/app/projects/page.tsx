@@ -10,7 +10,6 @@ import {
   SiOpenvpn,
   SiCisco,
   SiSqlite,
-  SiD,
   SiDocker,
 } from 'react-icons/si';
 

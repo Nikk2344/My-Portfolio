@@ -54,7 +54,8 @@ export default function Hero() {
           Cloud Enthusiast & Network Security Learner
         </h2>
         <p className="text-gray-300 text-md max-w-xl leading-relaxed mx-auto md:mx-0">
-          Network Security / Docker / VPN Systems / Web Dev/ Python / AWS / DevOps
+          I&apos;m passionate about Network Security &amp; Cloud. <br />
+          Network Security / Docker / VPN Systems / Web Dev / Python / AWS / DevOps
         </p>
       </motion.div>
 

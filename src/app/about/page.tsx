@@ -23,7 +23,7 @@ export default function AboutPage() {
 
     let width = window.innerWidth;
     let height = window.innerHeight;
-    
+
     function setCanvasSize() {
       if (!canvas) return;
       canvas.width = window.innerWidth;
@@ -31,7 +31,7 @@ export default function AboutPage() {
       width = canvas.width;
       height = canvas.height;
     }
-    
+
     setCanvasSize();
     window.addEventListener('resize', setCanvasSize);
 
@@ -57,7 +57,7 @@ export default function AboutPage() {
       drag: number;
       timeElapsed: number;
       color: string;
-      
+
       constructor(x: number, y: number, velocityX: number, velocityY: number) {
         this.x = x;
         this.y = y;
@@ -71,30 +71,30 @@ export default function AboutPage() {
         this.timeElapsed = 0;
         this.color = limeColors[Math.floor(Math.random() * limeColors.length)];
       }
-      
+
       draw() {
         if (!ctx) return;
-        
+
         // Simple star with lime green color
         ctx.fillStyle = this.color.replace('1)', `${this.alpha})`);
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
         ctx.fill();
-        
+
         // Add glow effect
         ctx.shadowColor = this.color;
         ctx.shadowBlur = this.size * 2;
         ctx.fill();
         ctx.shadowBlur = 0;
       }
-      
+
       update(deltaTime: number) {
         this.x += this.velocityX + (Math.random() * 0.5 - 0.25);
         this.velocityX *= this.drag;
         this.y += this.velocityY;
         this.velocityY += this.gravity;
         this.alpha = Math.max(0, this.alpha - 0.005);
-        
+
         this.timeElapsed += deltaTime;
         if (this.timeElapsed < 2000) {
           this.size = this.finalSize * 2 - (this.finalSize * this.timeElapsed / 2000);
@@ -114,10 +114,10 @@ export default function AboutPage() {
       mouseVelocityY = e.clientY - lastMouseY;
       lastMouseX = e.clientX;
       lastMouseY = e.clientY;
-      
+
       let randomOffsetX = (Math.random() - 0.5) * 100;
       let randomOffsetY = (Math.random() - 0.5) * 100;
-      
+
       stars.push(new Star(e.clientX, e.clientY, mouseVelocityX + randomOffsetX, mouseVelocityY + randomOffsetY));
     }
 
@@ -129,15 +129,15 @@ export default function AboutPage() {
     function update(time = 0) {
       const deltaTime = time - lastTime;
       lastTime = time;
-      
+
       if (!ctx || !canvas) return;
-      
+
       ctx.clearRect(0, 0, width, height);
-      
+
       stars.forEach(star => star.update(deltaTime));
       stars.forEach(star => star.draw());
       stars = stars.filter(star => star.alpha > 0 && star.y < height && star.x > 0 && star.x < width);
-      
+
       animationFrameId = requestAnimationFrame(update);
     }
 
