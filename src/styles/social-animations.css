@@ -1,0 +1,129 @@
+/* Social Icons Animations */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes shake {
+  0%, 100% { 
+    transform: translateX(0); 
+  }
+  10%, 30%, 50%, 70%, 90% { 
+    transform: translateX(-3px); 
+  }
+  20%, 40%, 60%, 80% { 
+    transform: translateX(3px); 
+  }
+}
+
+@keyframes float {
+  0%, 100% { 
+    transform: translateY(0px); 
+  }
+  50% { 
+    transform: translateY(-8px); 
+  }
+}
+
+@keyframes wobble {
+  0% { 
+    transform: translateX(0%); 
+  }
+  15% { 
+    transform: translateX(-15px) rotate(-3deg); 
+  }
+  30% { 
+    transform: translateX(12px) rotate(2deg); 
+  }
+  45% { 
+    transform: translateX(-8px) rotate(-2deg); 
+  }
+  60% { 
+    transform: translateX(5px) rotate(1deg); 
+  }
+  75% { 
+    transform: translateX(-3px) rotate(-1deg); 
+  }
+  100% { 
+    transform: translateX(0%); 
+  }
+}
+
+/* Base Social Icon Styles */
+.social-icon {
+  position: relative;
+  display: inline-block;
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  animation: bounce 0.6s ease-in-out;
+}
+
+/* Individual Icon Animations */
+.telegram-icon:hover {
+  animation: pulse 0.8s ease-in-out;
+}
+
+.discord-icon:hover {
+  animation: shake 0.6s ease-in-out;
+}
+
+.whatsapp-icon:hover {
+  animation: float 1s ease-in-out;
+}
+
+.instagram-icon:hover {
+  animation: wobble 1s ease-in-out;
+}
+
+.linkedin-icon:hover {
+  animation: bounce 0.6s ease-in-out;
+}
+
+/* Hover Glow Effects */
+.social-icon:hover::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: linear-gradient(45deg, rgba(34, 197, 94, 0.3), rgba(163, 230, 53, 0.3));
+  border-radius: 50%;
+  z-index: -1;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+/* Click Effects */
+.social-icon:active {
+  transform: scale(0.95);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .social-icon {
+    padding: 0.4rem;
+  }
+}
