@@ -261,13 +261,99 @@ export default function ToolboxPage() {
             </div>
           </div>
           {/* More Coming */}
-<div className="flex justify-center mt-10">
-  <span className="text-lg md:text-xl font-semibold text-lime-200 tracking-wide">
-    <span className="text-lime-400 font-bold">And this toolbox is only growing.</span>
-    <span className="text-gray-200"> Many more industry-leading tools are on the horizon.</span>
-    <span className="block mt-2 text-lime-300 font-semibold">&hellip;and many more upcoming industry-level tools.</span>
-  </span>
-</div>
+{/* Animated Ending Section */}
+          <div className="mt-16 relative">
+            {/* Pulsing Timeline End Point */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-gradient-to-r from-lime-400 to-green-400 rounded-full border-4 border-black shadow-2xl shadow-lime-400/60 animate-pulse"></div>
+            
+            {/* Main Ending Container */}
+            <div className="bg-gradient-to-br from-[#0f0f0f] via-[#1a1a1a] to-[#0f0f0f] border-2 border-lime-500/30 rounded-2xl p-8 mt-8 shadow-2xl shadow-lime-400/10 backdrop-blur-sm">
+              
+              {/* Animated Title */}
+              <div className="text-center mb-6">
+                <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-lime-400 via-green-400 to-emerald-400 bg-clip-text text-transparent animate-pulse mb-2">
+                  🚀 The Journey Continues
+                </h2>
+                <div className="w-24 h-1 bg-gradient-to-r from-lime-400 to-green-400 mx-auto rounded-full animate-pulse"></div>
+              </div>
+
+              {/* Animated Stats Grid */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                <div className="bg-[#111] border border-lime-600/30 rounded-lg p-3 text-center hover:border-lime-400/50 transition-all duration-300 group">
+                  <div className="text-2xl font-bold text-lime-400 group-hover:scale-110 transition-transform duration-300">8+</div>
+                  <div className="text-xs text-gray-300">Mastered</div>
+                </div>
+                <div className="bg-[#111] border border-yellow-600/30 rounded-lg p-3 text-center hover:border-yellow-400/50 transition-all duration-300 group">
+                  <div className="text-2xl font-bold text-yellow-400 group-hover:scale-110 transition-transform duration-300 animate-pulse">2+</div>
+                  <div className="text-xs text-gray-300">Learning</div>
+                </div>
+                <div className="bg-[#111] border border-blue-600/30 rounded-lg p-3 text-center hover:border-blue-400/50 transition-all duration-300 group">
+                  <div className="text-2xl font-bold text-blue-400 group-hover:scale-110 transition-transform duration-300">3+</div>
+                  <div className="text-xs text-gray-300">Planned</div>
+                </div>
+                <div className="bg-[#111] border border-purple-600/30 rounded-lg p-3 text-center hover:border-purple-400/50 transition-all duration-300 group">
+                  <div className="text-2xl font-bold text-purple-400 group-hover:scale-110 transition-transform duration-300">∞</div>
+                  <div className="text-xs text-gray-300">Potential</div>
+                </div>
+              </div>
+
+              {/* Animated Quote Section */}
+              <div className="text-center mb-6">
+                <blockquote className="text-lg md:text-xl font-medium text-gray-200 italic mb-4 leading-relaxed">
+                  "Every expert was once a <span className="text-lime-400 font-bold animate-pulse">beginner</span>.
+                  <br />
+                  Every pro was once an <span className="text-green-400 font-bold">amateur</span>.
+                  <br />
+                  Every icon was once an <span className="text-emerald-400 font-bold">unknown</span>."
+                </blockquote>
+                <cite className="text-sm text-lime-300 font-semibold">— The Developer's Mindset</cite>
+              </div>
+
+              {/* Floating Tech Icons */}
+              <div className="flex justify-center items-center gap-4 mb-6 flex-wrap">
+                <div className="text-3xl animate-bounce" style={{animationDelay: '0s'}}>⚛️</div>
+                <div className="text-3xl animate-bounce" style={{animationDelay: '0.2s'}}>☁️</div>
+                <div className="text-3xl animate-bounce" style={{animationDelay: '0.4s'}}>🐍</div>
+                <div className="text-3xl animate-bounce" style={{animationDelay: '0.6s'}}>🔒</div>
+                <div className="text-3xl animate-bounce" style={{animationDelay: '0.8s'}}>☸️</div>
+                <div className="text-3xl animate-bounce" style={{animationDelay: '1s'}}>🚀</div>
+              </div>
+
+              {/* Growth Message */}
+              <div className="text-center space-y-3">
+                <p className="text-lg font-semibold">
+                  <span className="text-lime-400 font-bold animate-pulse">This toolbox is constantly evolving</span>
+                  <span className="text-gray-200"> — each skill building upon the last</span>
+                </p>
+                <p className="text-base text-gray-300">
+                  From web fundamentals to cloud architecture, from scripting to security — 
+                  <span className="text-green-400 font-semibold"> the journey of a thousand miles begins with a single step</span>
+                </p>
+                <p className="text-sm text-lime-300 font-medium">
+                  🌟 Next stop: Cloud mastery and enterprise-level solutions 🌟
+                </p>
+              </div>
+
+              {/* Animated Progress Bar */}
+              <div className="mt-6">
+                <div className="flex justify-between text-xs text-gray-400 mb-1">
+                  <span>Journey Progress</span>
+                  <span>Continuously Growing...</span>
+                </div>
+                <div className="w-full bg-gray-800 rounded-full h-2 overflow-hidden">
+                  <div className="h-full bg-gradient-to-r from-lime-400 via-green-500 to-emerald-400 rounded-full animate-pulse transition-all duration-1000" style={{width: '75%'}}></div>
+                </div>
+              </div>
+
+              {/* Final CTA */}
+              <div className="text-center mt-6">
+                <div className="inline-flex items-center gap-2 bg-gradient-to-r from-lime-500/20 to-green-500/20 border border-lime-400/30 rounded-full px-6 py-2 hover:from-lime-500/30 hover:to-green-500/30 transition-all duration-300 group cursor-pointer">
+                  <span className="text-lime-400 font-semibold group-hover:text-lime-300">Ready to build the future</span>
+                  <span className="text-2xl group-hover:translate-x-1 transition-transform duration-300">🚀</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
