@@ -7,6 +7,7 @@ import Philosophy from '../components/Philosophy';
 import { FaTelegramPlane, FaDiscord, FaWhatsapp, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import React, { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
+import Header from '../components/Header';
 
 function Loader() {
   return (
@@ -179,6 +180,7 @@ export default function Home() {
         
         {/* Main content with higher z-index */}
         <main className="relative z-10 text-white px-6 py-16 space-y-24">
+          <Header />
           <Hero />
 
           <div className="flex justify-center">
@@ -357,3 +359,6 @@ export default function Home() {
     </>
   );
 }
+
+// layout.tsx
+// (Removed duplicate default export of Layout)

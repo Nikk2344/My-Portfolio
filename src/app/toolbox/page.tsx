@@ -1,6 +1,23 @@
 'use client';
 
+import { useState, useEffect } from 'react';
+import RingLoader from '@/components/RingLoader';
+
 export default function ToolboxPage() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000); // Show loader for 1 second
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <RingLoader />;
+  }
+
   return (
     <main className="min-h-screen bg-gradient-to-br from-black via-[#0a0a0a] to-black text-white px-4 py-12">
       <h1 className="text-3xl md:text-4xl font-bold text-lime-400 text-center mb-8">

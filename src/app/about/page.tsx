@@ -6,11 +6,12 @@ import HeroAbout from '../../components/HeroAbout';
 import AboutGrid from '../../components/AboutGrid';
 import Skills from '../../components/Skills';
 import PortfolioPreview from '../../components/PortfolioPreview';
-import ContactForm from '../../components/ContactForm';
+import FeedbackForm from '@/components/FeedbackForm';  // Changed import
 import { useRouter } from 'next/navigation';
 
 export default function AboutPage() {
   const [blinkProject, setBlinkProject] = useState(false);
+  const [loading, setLoading] = useState(true);
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const router = useRouter();
 
@@ -174,6 +175,15 @@ export default function AboutPage() {
     }
   }, []);
 
+  // Simulate loading effect
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3000); // Simulate a 3-second loading time
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <main className="relative min-h-screen bg-gradient-to-br from-black via-[#0a0a0a] to-black text-white overflow-hidden">
       {/* Enhanced mouse trailing canvas */}
@@ -252,7 +262,11 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <ContactForm />
+      {/* Replaced ContactForm with FeedbackForm */}
+      <section className="max-w-3xl mx-auto px-6 pb-20">
+        <h2 className="text-2xl font-bold text-lime-400 text-center mb-6">Share Your Thoughts</h2>
+        <FeedbackForm page="About" />
+      </section>
     </main>
   );
 }

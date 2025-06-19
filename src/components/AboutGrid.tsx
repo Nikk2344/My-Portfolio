@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useState, useEffect, useRef } from 'react';
+import FeedbackForm from './FeedbackForm';
 
 export default function AboutGrid() {
   const [text, setText] = useState('');

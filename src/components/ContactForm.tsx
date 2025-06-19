@@ -13,7 +13,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section id="contact" className="bg-black py-24 px-6">
+    <section id="get-in-touch" className="bg-black py-24 px-6">
       <div className="max-w-3xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-lime-400 mb-6">Let&apos;s Work Together</h2>
         <p className="text-gray-300 mb-8 text-lg">

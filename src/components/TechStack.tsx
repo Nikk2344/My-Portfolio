@@ -2,7 +2,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FaAws, FaDocker, FaPython, FaReact } from 'react-icons/fa';
+import { FaAws, FaDocker, FaLinux, FaPython, FaReact } from 'react-icons/fa';
 import { SiTailwindcss, SiMysql } from 'react-icons/si';
 
 export default function TechStack() {
@@ -19,6 +19,7 @@ export default function TechStack() {
           <motion.div whileHover={{ scale: 1.2 }}><FaAws title="AWS" className="text-orange-400" /></motion.div>
           <motion.div whileHover={{ scale: 1.2 }}><FaPython title="Python" className="text-yellow-300" /></motion.div>
           <motion.div whileHover={{ scale: 1.2 }}><SiMysql title="MySQL" className="text-blue-300" /></motion.div>
+          <motion.div whileHover={{ scale: 1.2 }}><FaLinux title="Linux" className="text-gray-400" /></motion.div>
         </div>
       </div>
     </section>
