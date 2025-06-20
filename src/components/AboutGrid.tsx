@@ -7,7 +7,7 @@ import FeedbackForm from './FeedbackForm';
 export default function AboutGrid() {
   const [text, setText] = useState('');
   const sectionRef = useRef<HTMLElement | null>(null);
-  const fullText = "I was born in a small village, Dharikpur, Jaunpur. My early education began amidst monsoons, and after High School, I later moved to Kota for my intermediate studies. College life at Axis Colleges Kanpur (2021–2024) was a turning point — it taught me not just code, but how to think like an engineer.\n\nCurrently, I&apos;m pursuing my MCA while working in Cybersecurity. My goal? To go beyond what I know, explore cloud-native security, and engineer digital trust.";
+  const fullText = "I was born in a small village Dharikpur of the District Jaunpur. My early education began amidst monsoons, and after High School, I later moved to Kota for my intermediate studies. College life at Axis Colleges Kanpur (2021–2024) was a turning point — it taught me not just code, but how to think like an engineer.\n\nCurrently, I'm pursuing my Master's while working . My goal? To go beyond what I know, explore cloud-native security, and engineer digital trust.";
 
   useEffect(() => {
     let i = 0;

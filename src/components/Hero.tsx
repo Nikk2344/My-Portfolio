@@ -149,7 +149,7 @@ export default function Hero() {
           NIKHIL UPADHYAY
         </h1>
         <h2 className="text-xl md:text-2xl text-green-400">
-          Cloud Enthusiast & Network Security Learner
+          Cloud Enthusiast & Network Security Enthusiast
         </h2>
         <p className="text-gray-300 text-md max-w-xl leading-relaxed mx-auto md:mx-0">
           I&apos;m passionate about Network Security &amp; Cloud. <br />
