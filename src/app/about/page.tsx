@@ -267,6 +267,9 @@ export default function AboutPage() {
         <h2 className="text-2xl font-bold text-lime-400 text-center mb-6">Share Your Thoughts</h2>
         <FeedbackForm page="About" />
       </section>
+      <footer className="text-center text-gray-500 text-sm py-8">
+        Copyright &copy; 2025. All rights reserved.
+      </footer>
     </main>
   );
 }

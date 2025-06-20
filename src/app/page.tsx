@@ -8,6 +8,7 @@ import { FaTelegramPlane, FaDiscord, FaWhatsapp, FaInstagram, FaLinkedin } from 
 import React, { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import Header from '../components/Header';
+import { footer } from 'framer-motion/m';
 
 function Loader() {
   return (
@@ -354,6 +355,9 @@ export default function Home() {
               }
             }
           `}</style>
+          <footer className="text-center text-gray-500 text-sm py-8">
+            Copyright &copy; 2025. All rights reserved.
+          </footer>
         </main>
       </div>
     </>
