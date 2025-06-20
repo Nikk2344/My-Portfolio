@@ -21,7 +21,7 @@ export default function HeroAbout() {
         className="z-10 max-w-2xl mx-auto"
       >
         <h1 className="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-lime-200 animate-gradient-x">
-          Cloud & Network Security Learner
+          Cloud & Network Security Enthusiast
         </h1>
         <p className="text-gray-300 text-lg mt-6 max-w-xl mx-auto leading-relaxed">
           Bringing infrastructure to life with automation, security, and innovation. Welcome to my digital workspace.
